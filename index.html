@@ -37,15 +37,16 @@
             <br>
             <div class="container my-5">
                 <div class="home-container">
+                    <div class="topic_heade">
                     <!-- left columns -->
                     <video width ='320' controls>
                         <source src ="{% static 'images/' %}" type='video/mp4'> </source>
                         Video
                     </video>
-                    <div class="topic_heade"></div>
+                    
     
                         <li>  
-                            <a href="{% url 'home' %}?q={{topic.name}}">{{ topic.name }} </a> 
+      S                      <a href="{% url 'home' %}?q={{topic.name}}">{{ topic.name }} </a> 
                                     <span>&emsp;{{ topic.room_set.all.count }} Email</span>
                         </li>
                                 <br>
