@@ -1,1 +1,91 @@
 
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel ='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <header class="site-header">
+            <!--- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+              <div class="container">
+                <a class="navbar-brand mr-4" href="{%url 'home'%}">Sayo Everden's Webpage </a> &emsp;
+                  <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                    </div>
+                  <div class="navbar-nav">
+                   <a class="nav-item nav-link" href ="/CV2022-SayoEverden.pdf">CV</a> &emsp;      
+                   <a class="nav-item nav-link" href="/project">Project</a>                                 
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            <style>
+                .home-container{
+                    display:grid;
+                    grid-template-columns:  2fr 7fr 1fr;
+                }
+            </style>
+            <br>
+            <div class="container my-5">
+                <div class="home-container">
+                    <div class="topic_heade">
+                    <!-- left columns -->
+                        <br>
+                        <br>
+                        <img src="https://sayo96825.github.io/profile3.png" class="topic_heade" alt="Avatar"  width = 150 style="border-radius: 50%; width:100" >
+                        <br><br>
+                        <h3>Sayo Everden</h3>
+                        
+                        <br>
+                        <br>
+                        <ul style="list-style-type:none;">
+                            <li>  
+                                <a href="sayoeverden@gmail.com">Email</a>
+                            </li>
+                            <br>
+
+                            <li>
+                                 <a href="https://www.linkedin.com/in/sayoeverden"> LinkedIn</a>
+                            </li>
+                            <br>    
+                            <li>  
+                                <a href="https://github.com/sayo96825"> Github</a>
+                            </li>  
+                        </ul>
+                    </div>                 
+                    <!-- right columns -->
+                    <div>                      
+                        <div class ="container my-5">
+                        <h1> Welcome to my webpage!</h1>   
+                        <br>
+                        <p> I am Sayo Everden. My background is in psychology and I went back to school to pursue my passion for data analysis.
+                            I have recently graduated from UBC with Bachelor's in Computer Science, completed data science certificates from UBC and Google, and seeking an opportunity in data science.
+                            <br>
+                            <br>
+                            I am originally from Osaka, Japan. 
+                            I have been to Australia, the US, and then to Canada. 
+                            I was a star student in high school and I was awarded a scholarship to study at the Geelong Grammer school in Australia where King Charles attended.
+                            This opportunity led me to acquire an AA degree in Hawaii, US. 
+                            I was also a star student in the college where I was awarded the American Presidential Award and a scholarship to UBC Vancouver.
+                            I also had my daughter during this time and finished my psychology degree as a student mother.
+                            <br>
+                            <br>
+                            My background in Psychology has been a great foundation for raising my family, running a family-owned funeral home, and managing restaurants. 
+                            However, it was frustrating to be surrounded by data everywhere without the means to scientifically analyze them.  
+                            Now with my newly acquired programming and data analytics skills combined with my psychology background and customer service and management experience, my interest is in data visualization, data ethics and accesibility. 
+                        </p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+      </body>
+</html>
